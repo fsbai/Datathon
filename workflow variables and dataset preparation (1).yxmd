@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="198" y="211" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\vyvy.es\Desktop\var.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>var.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IDCLIENT" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="CIVILITE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="PAYS" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="AGE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TR_AGE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="is_ADH_ACTIF" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="DUREE_ADH" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TR_DUREE_ADH" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ZONE_HABITAT" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TAILLE_COMMUNE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="DIST_CLT_MAG_ADH" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_foyer" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="2_pct_maison" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="Surf_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="niv_vie" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="exclu_mag" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ATTRITION" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="delay_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TR_delay" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_uvc_ha_we" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_we" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_we" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_uvc_ha_jsem" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="tick_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_tick" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="marge_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="remise_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_tick" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="uvc_moy" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_panier" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_promo" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_promo" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="pds_print." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_ete" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="pds_aut." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="pds_hiv" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_print." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_ete" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_aut." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_hiv" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_saison" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="favori_saison" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_art_diff" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="qte_art" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_fam_diff" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="tick_moy_client" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="excl_univ" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="cross_fam" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="cross_ss_fam" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="multi_pdt" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="evol_nb_art_pct" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_alim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_anim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_jard" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_mais" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_alim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_anim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_jard" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_mais" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_alim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_anim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_jard" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_mais" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_010" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_020" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_030" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_040" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_050" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_060" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_070" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_080" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_090" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_100" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_110" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_120" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_130" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_140" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_170" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_180" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_190" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_200" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_210" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_220" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_010" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_020" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_030" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_040" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_050" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_060" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_070" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_080" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_090" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_100" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_110" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_120" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_130" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_140" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_170" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_180" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_190" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_200" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_210" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ind_220" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_010" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_020" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_030" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_050" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_060" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_070" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_080" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_090" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_100" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_110" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_120" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_130" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_140" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_220" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="favori_art" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_favori_art" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="qte_art_favori" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_favori_ssfam" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="294" y="211" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="IDCLIENT" selected="False" />
+            <Field field="CIVILITE" selected="False" />
+            <Field field="PAYS" selected="False" />
+            <Field field="AGE" selected="True" />
+            <Field field="TR_AGE" selected="False" />
+            <Field field="is_ADH_ACTIF" selected="False" />
+            <Field field="DUREE_ADH" selected="False" />
+            <Field field="TR_DUREE_ADH" selected="False" />
+            <Field field="ZONE_HABITAT" selected="False" />
+            <Field field="TAILLE_COMMUNE" selected="False" />
+            <Field field="DIST_CLT_MAG_ADH" selected="True" />
+            <Field field="nb_foyer" selected="True" />
+            <Field field="2_pct_maison" selected="True" />
+            <Field field="Surf_moy" selected="True" />
+            <Field field="niv_vie" selected="False" />
+            <Field field="exclu_mag" selected="False" />
+            <Field field="ATTRITION" selected="True" />
+            <Field field="delay_moy" selected="True" />
+            <Field field="TR_delay" selected="False" />
+            <Field field="nb_uvc_ha_we" selected="True" />
+            <Field field="poids_we" selected="True" />
+            <Field field="profil_we" selected="False" />
+            <Field field="nb_uvc_ha_jsem" selected="True" />
+            <Field field="tick_moy" selected="True" />
+            <Field field="ind_tick" selected="True" />
+            <Field field="marge_moy" selected="True" />
+            <Field field="remise_moy" selected="True" />
+            <Field field="profil_tick" selected="False" />
+            <Field field="uvc_moy" selected="True" />
+            <Field field="profil_panier" selected="False" />
+            <Field field="poids_promo" selected="True" />
+            <Field field="profil_promo" selected="False" />
+            <Field field="pds_print." selected="True" />
+            <Field field="poids_ete" selected="True" />
+            <Field field="pds_aut." selected="True" />
+            <Field field="pds_hiv" selected="True" />
+            <Field field="typo_conso_print." selected="False" />
+            <Field field="typo_conso_ete" selected="False" />
+            <Field field="typo_conso_aut." selected="False" />
+            <Field field="typo_conso_hiv" selected="False" />
+            <Field field="nb_saison" selected="True" />
+            <Field field="favori_saison" selected="False" />
+            <Field field="nb_art_diff" selected="True" />
+            <Field field="qte_art" selected="True" />
+            <Field field="nb_fam_diff" selected="True" />
+            <Field field="tick_moy_client" selected="True" />
+            <Field field="excl_univ" selected="False" />
+            <Field field="cross_fam" selected="False" />
+            <Field field="cross_ss_fam" selected="False" />
+            <Field field="multi_pdt" selected="False" />
+            <Field field="evol_nb_art_pct" selected="True" />
+            <Field field="poids_alim" selected="True" />
+            <Field field="poids_anim" selected="True" />
+            <Field field="poids_jard" selected="True" />
+            <Field field="poids_mais" selected="True" />
+            <Field field="ind_alim" selected="True" />
+            <Field field="ind_anim" selected="True" />
+            <Field field="ind_jard" selected="True" />
+            <Field field="ind_mais" selected="True" />
+            <Field field="typo_alim" selected="False" />
+            <Field field="typo_anim" selected="False" />
+            <Field field="typo_jard" selected="False" />
+            <Field field="typo_mais" selected="False" />
+            <Field field="poids_010" selected="True" />
+            <Field field="poids_020" selected="True" />
+            <Field field="poids_030" selected="True" />
+            <Field field="poids_040" selected="True" />
+            <Field field="poids_050" selected="True" />
+            <Field field="poids_060" selected="True" />
+            <Field field="poids_070" selected="True" />
+            <Field field="poids_080" selected="True" />
+            <Field field="poids_090" selected="True" />
+            <Field field="poids_100" selected="True" />
+            <Field field="poids_110" selected="True" />
+            <Field field="poids_120" selected="True" />
+            <Field field="poids_130" selected="True" />
+            <Field field="poids_140" selected="True" />
+            <Field field="poids_170" selected="True" />
+            <Field field="poids_180" selected="True" />
+            <Field field="poids_190" selected="True" />
+            <Field field="poids_200" selected="True" />
+            <Field field="poids_210" selected="True" />
+            <Field field="poids_220" selected="True" />
+            <Field field="ind_010" selected="True" />
+            <Field field="ind_020" selected="True" />
+            <Field field="ind_030" selected="True" />
+            <Field field="ind_040" selected="True" />
+            <Field field="ind_050" selected="True" />
+            <Field field="ind_060" selected="True" />
+            <Field field="ind_070" selected="True" />
+            <Field field="ind_080" selected="True" />
+            <Field field="ind_090" selected="True" />
+            <Field field="ind_100" selected="True" />
+            <Field field="ind_110" selected="True" />
+            <Field field="ind_120" selected="True" />
+            <Field field="ind_130" selected="True" />
+            <Field field="ind_140" selected="True" />
+            <Field field="ind_170" selected="True" />
+            <Field field="ind_180" selected="True" />
+            <Field field="ind_190" selected="True" />
+            <Field field="ind_200" selected="True" />
+            <Field field="ind_210" selected="True" />
+            <Field field="ind_220" selected="True" />
+            <Field field="typo_010" selected="False" />
+            <Field field="typo_020" selected="False" />
+            <Field field="typo_030" selected="False" />
+            <Field field="typo_050" selected="False" />
+            <Field field="typo_060" selected="False" />
+            <Field field="typo_070" selected="False" />
+            <Field field="typo_080" selected="False" />
+            <Field field="typo_090" selected="False" />
+            <Field field="typo_100" selected="False" />
+            <Field field="typo_110" selected="False" />
+            <Field field="typo_120" selected="False" />
+            <Field field="typo_130" selected="False" />
+            <Field field="typo_140" selected="False" />
+            <Field field="typo_220" selected="False" />
+            <Field field="favori_art" selected="True" />
+            <Field field="poids_favori_art" selected="True" />
+            <Field field="qte_art_favori" selected="True" />
+            <Field field="poids_favori_ssfam" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IDCLIENT" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="CIVILITE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="PAYS" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="AGE" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="TR_AGE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="is_ADH_ACTIF" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="DUREE_ADH" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TR_DUREE_ADH" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ZONE_HABITAT" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TAILLE_COMMUNE" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="DIST_CLT_MAG_ADH" size="18" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="String" />
+            <Field name="nb_foyer" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="2_pct_maison" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="Surf_moy" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="niv_vie" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="exclu_mag" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="ATTRITION" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Byte" />
+            <Field name="delay_moy" size="18" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="TR_delay" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_uvc_ha_we" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_we" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="profil_we" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_uvc_ha_jsem" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="tick_moy" size="20" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="String" />
+            <Field name="ind_tick" size="21" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="String" />
+            <Field name="marge_moy" size="21" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="String" />
+            <Field name="remise_moy" size="21" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_tick" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="uvc_moy" size="19" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="profil_panier" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_promo" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="profil_promo" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="pds_print." source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_ete" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="pds_aut." source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="pds_hiv" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="typo_conso_print." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_ete" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_aut." size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_conso_hiv" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_saison" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Byte" />
+            <Field name="favori_saison" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="nb_art_diff" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Int16" />
+            <Field name="qte_art" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="nb_fam_diff" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Byte" />
+            <Field name="tick_moy_client" size="20" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="String" />
+            <Field name="excl_univ" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="cross_fam" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="cross_ss_fam" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="multi_pdt" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="evol_nb_art_pct" size="19" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_alim" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_anim" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_jard" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_mais" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_alim" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_anim" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_jard" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_mais" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="typo_alim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_anim" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_jard" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_mais" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="poids_010" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_020" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_030" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_040" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_050" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_060" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_070" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_080" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_090" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_100" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_110" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_120" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_130" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_140" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_170" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_180" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_190" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_200" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_210" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_220" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_010" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_020" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_030" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_040" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_050" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_060" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_070" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_080" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_090" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_100" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_110" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_120" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_130" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_140" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_170" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_180" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_190" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_200" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_210" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="ind_220" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="typo_010" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_020" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_030" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_050" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_060" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_070" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_080" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_090" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_100" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_110" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_120" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_130" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_140" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="typo_220" size="254" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="V_String" />
+            <Field name="favori_art" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Int32" />
+            <Field name="poids_favori_art" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="qte_art_favori" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+            <Field name="poids_favori_ssfam" source="File: C:\Users\vyvy.es\Desktop\var.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="1326" y="201" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">70</Value>
+          <Value name="validation pct">30</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1134" y="261" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1326" y="321" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\vyvy.es\Desktop\READY DATASET.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>READY DATASET.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="485" y="294" width="457" height="266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Standardization of numerical variables</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Standardization of numerical variables</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings>
+            <Position x="642" y="355" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Parameters">
+              <RecordInfo>
+                <Field name="Name" size="18" source="Summarize: GroupBy - Name" type="String" />
+                <Field name="Mean" source="Summarize: Avg - Value" type="Double" />
+                <Field name="SD" source="Summarize: StdDev - Value" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Data">
+              <RecordInfo>
+                <Field name="poids_110" source="CrossTab:Header:Name:poids_110:Sum:" type="Double" />
+                <Field name="tick_moy" source="CrossTab:Header:Name:tick_moy:Sum:" type="Double" />
+                <Field name="qte_art_favori" source="CrossTab:Header:Name:qte_art_favori:Sum:" type="Double" />
+                <Field name="pds_print_" source="CrossTab:Header:Name:pds_print.:Sum:" type="Double" />
+                <Field name="nb_uvc_ha_jsem" source="CrossTab:Header:Name:nb_uvc_ha_jsem:Sum:" type="Double" />
+                <Field name="poids_220" source="CrossTab:Header:Name:poids_220:Sum:" type="Double" />
+                <Field name="nb_foyer" source="CrossTab:Header:Name:nb_foyer:Sum:" type="Double" />
+                <Field name="poids_060" source="CrossTab:Header:Name:poids_060:Sum:" type="Double" />
+                <Field name="ind_130" source="CrossTab:Header:Name:ind_130:Sum:" type="Double" />
+                <Field name="marge_moy" source="CrossTab:Header:Name:marge_moy:Sum:" type="Double" />
+                <Field name="poids_090" source="CrossTab:Header:Name:poids_090:Sum:" type="Double" />
+                <Field name="ind_090" source="CrossTab:Header:Name:ind_090:Sum:" type="Double" />
+                <Field name="nb_art_diff" source="CrossTab:Header:Name:nb_art_diff:Sum:" type="Double" />
+                <Field name="poids_promo" source="CrossTab:Header:Name:poids_promo:Sum:" type="Double" />
+                <Field name="ind_200" source="CrossTab:Header:Name:ind_200:Sum:" type="Double" />
+                <Field name="ind_170" source="CrossTab:Header:Name:ind_170:Sum:" type="Double" />
+                <Field name="ATTRITION" source="CrossTab:Header:Name:ATTRITION:Sum:" type="Double" />
+                <Field name="poids_jard" source="CrossTab:Header:Name:poids_jard:Sum:" type="Double" />
+                <Field name="poids_080" source="CrossTab:Header:Name:poids_080:Sum:" type="Double" />
+                <Field name="poids_050" source="CrossTab:Header:Name:poids_050:Sum:" type="Double" />
+                <Field name="poids_130" source="CrossTab:Header:Name:poids_130:Sum:" type="Double" />
+                <Field name="ind_jard" source="CrossTab:Header:Name:ind_jard:Sum:" type="Double" />
+                <Field name="remise_moy" source="CrossTab:Header:Name:remise_moy:Sum:" type="Double" />
+                <Field name="ind_180" source="CrossTab:Header:Name:ind_180:Sum:" type="Double" />
+                <Field name="poids_200" source="CrossTab:Header:Name:poids_200:Sum:" type="Double" />
+                <Field name="ind_060" source="CrossTab:Header:Name:ind_060:Sum:" type="Double" />
+                <Field name="ind_anim" source="CrossTab:Header:Name:ind_anim:Sum:" type="Double" />
+                <Field name="ind_mais" source="CrossTab:Header:Name:ind_mais:Sum:" type="Double" />
+                <Field name="ind_040" source="CrossTab:Header:Name:ind_040:Sum:" type="Double" />
+                <Field name="poids_180" source="CrossTab:Header:Name:poids_180:Sum:" type="Double" />
+                <Field name="ind_140" source="CrossTab:Header:Name:ind_140:Sum:" type="Double" />
+                <Field name="ind_070" source="CrossTab:Header:Name:ind_070:Sum:" type="Double" />
+                <Field name="poids_mais" source="CrossTab:Header:Name:poids_mais:Sum:" type="Double" />
+                <Field name="poids_alim" source="CrossTab:Header:Name:poids_alim:Sum:" type="Double" />
+                <Field name="poids_120" source="CrossTab:Header:Name:poids_120:Sum:" type="Double" />
+                <Field name="ind_050" source="CrossTab:Header:Name:ind_050:Sum:" type="Double" />
+                <Field name="pds_aut_" source="CrossTab:Header:Name:pds_aut.:Sum:" type="Double" />
+                <Field name="poids_010" source="CrossTab:Header:Name:poids_010:Sum:" type="Double" />
+                <Field name="nb_saison" source="CrossTab:Header:Name:nb_saison:Sum:" type="Double" />
+                <Field name="poids_favori_art" source="CrossTab:Header:Name:poids_favori_art:Sum:" type="Double" />
+                <Field name="Surf_moy" source="CrossTab:Header:Name:Surf_moy:Sum:" type="Double" />
+                <Field name="poids_020" source="CrossTab:Header:Name:poids_020:Sum:" type="Double" />
+                <Field name="nb_uvc_ha_we" source="CrossTab:Header:Name:nb_uvc_ha_we:Sum:" type="Double" />
+                <Field name="ind_120" source="CrossTab:Header:Name:ind_120:Sum:" type="Double" />
+                <Field name="qte_art" source="CrossTab:Header:Name:qte_art:Sum:" type="Double" />
+                <Field name="ind_100" source="CrossTab:Header:Name:ind_100:Sum:" type="Double" />
+                <Field name="ind_030" source="CrossTab:Header:Name:ind_030:Sum:" type="Double" />
+                <Field name="ind_220" source="CrossTab:Header:Name:ind_220:Sum:" type="Double" />
+                <Field name="poids_190" source="CrossTab:Header:Name:poids_190:Sum:" type="Double" />
+                <Field name="poids_030" source="CrossTab:Header:Name:poids_030:Sum:" type="Double" />
+                <Field name="2_pct_maison" source="CrossTab:Header:Name:2_pct_maison:Sum:" type="Double" />
+                <Field name="poids_favori_ssfam" source="CrossTab:Header:Name:poids_favori_ssfam:Sum:" type="Double" />
+                <Field name="ind_190" source="CrossTab:Header:Name:ind_190:Sum:" type="Double" />
+                <Field name="poids_210" source="CrossTab:Header:Name:poids_210:Sum:" type="Double" />
+                <Field name="AGE" source="CrossTab:Header:Name:AGE:Sum:" type="Double" />
+                <Field name="DIST_CLT_MAG_ADH" source="CrossTab:Header:Name:DIST_CLT_MAG_ADH:Sum:" type="Double" />
+                <Field name="ind_tick" source="CrossTab:Header:Name:ind_tick:Sum:" type="Double" />
+                <Field name="ind_alim" source="CrossTab:Header:Name:ind_alim:Sum:" type="Double" />
+                <Field name="poids_anim" source="CrossTab:Header:Name:poids_anim:Sum:" type="Double" />
+                <Field name="nb_fam_diff" source="CrossTab:Header:Name:nb_fam_diff:Sum:" type="Double" />
+                <Field name="pds_hiv" source="CrossTab:Header:Name:pds_hiv:Sum:" type="Double" />
+                <Field name="poids_040" source="CrossTab:Header:Name:poids_040:Sum:" type="Double" />
+                <Field name="poids_070" source="CrossTab:Header:Name:poids_070:Sum:" type="Double" />
+                <Field name="ind_020" source="CrossTab:Header:Name:ind_020:Sum:" type="Double" />
+                <Field name="ind_010" source="CrossTab:Header:Name:ind_010:Sum:" type="Double" />
+                <Field name="ind_080" source="CrossTab:Header:Name:ind_080:Sum:" type="Double" />
+                <Field name="ind_110" source="CrossTab:Header:Name:ind_110:Sum:" type="Double" />
+                <Field name="uvc_moy" source="CrossTab:Header:Name:uvc_moy:Sum:" type="Double" />
+                <Field name="poids_140" source="CrossTab:Header:Name:poids_140:Sum:" type="Double" />
+                <Field name="ind_210" source="CrossTab:Header:Name:ind_210:Sum:" type="Double" />
+                <Field name="poids_ete" source="CrossTab:Header:Name:poids_ete:Sum:" type="Double" />
+                <Field name="poids_100" source="CrossTab:Header:Name:poids_100:Sum:" type="Double" />
+                <Field name="poids_170" source="CrossTab:Header:Name:poids_170:Sum:" type="Double" />
+                <Field name="poids_we" source="CrossTab:Header:Name:poids_we:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Supporting_Macros\Standardize_z-score.yxmc" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="510" y="355" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="2_pct_maison" selected="True" />
+                <SelectField field="AGE" selected="True" />
+                <SelectField field="ATTRITION" selected="True" type="Bool" size="1" />
+                <SelectField field="CIVILITE" selected="False" />
+                <SelectField field="cross_fam" selected="False" />
+                <SelectField field="cross_ss_fam" selected="False" />
+                <SelectField field="delay_moy" selected="False" />
+                <SelectField field="DIST_CLT_MAG_ADH" selected="True" type="Double" size="8" />
+                <SelectField field="DUREE_ADH" selected="False" size="16384" />
+                <SelectField field="evol_nb_art_pct" selected="False" />
+                <SelectField field="excl_univ" selected="False" type="Bool" size="1" />
+                <SelectField field="exclu_mag" selected="False" type="Bool" size="1" />
+                <SelectField field="favori_art" selected="False" type="V_String" size="16384" />
+                <SelectField field="favori_saison" selected="False" />
+                <SelectField field="IDCLIENT" selected="False" />
+                <SelectField field="ind_010" selected="True" />
+                <SelectField field="ind_020" selected="True" />
+                <SelectField field="ind_030" selected="True" />
+                <SelectField field="ind_040" selected="True" />
+                <SelectField field="ind_050" selected="True" />
+                <SelectField field="ind_060" selected="True" />
+                <SelectField field="ind_070" selected="True" />
+                <SelectField field="ind_080" selected="True" />
+                <SelectField field="ind_090" selected="True" />
+                <SelectField field="ind_100" selected="True" />
+                <SelectField field="ind_110" selected="True" />
+                <SelectField field="ind_120" selected="True" />
+                <SelectField field="ind_130" selected="True" />
+                <SelectField field="ind_140" selected="True" />
+                <SelectField field="ind_170" selected="True" />
+                <SelectField field="ind_180" selected="True" />
+                <SelectField field="ind_190" selected="True" />
+                <SelectField field="ind_200" selected="True" />
+                <SelectField field="ind_210" selected="True" />
+                <SelectField field="ind_220" selected="True" />
+                <SelectField field="ind_alim" selected="True" />
+                <SelectField field="ind_anim" selected="True" />
+                <SelectField field="ind_jard" selected="True" />
+                <SelectField field="ind_mais" selected="True" />
+                <SelectField field="ind_tick" selected="True" type="Double" size="8" />
+                <SelectField field="is_ADH_ACTIF" selected="False" type="Bool" size="1" />
+                <SelectField field="marge_moy" selected="True" type="Double" size="8" />
+                <SelectField field="multi_pdt" selected="False" />
+                <SelectField field="nb_art_diff" selected="True" />
+                <SelectField field="nb_fam_diff" selected="True" type="Double" size="8" />
+                <SelectField field="nb_foyer" selected="True" />
+                <SelectField field="nb_saison" selected="True" type="Double" size="8" />
+                <SelectField field="nb_uvc_ha_jsem" selected="True" />
+                <SelectField field="nb_uvc_ha_we" selected="True" />
+                <SelectField field="niv_vie" selected="False" />
+                <SelectField field="PAYS" selected="False" />
+                <SelectField field="pds_aut." selected="True" />
+                <SelectField field="pds_hiv" selected="True" />
+                <SelectField field="pds_print." selected="True" />
+                <SelectField field="poids_010" selected="True" />
+                <SelectField field="poids_020" selected="True" />
+                <SelectField field="poids_030" selected="True" />
+                <SelectField field="poids_040" selected="True" />
+                <SelectField field="poids_050" selected="True" />
+                <SelectField field="poids_060" selected="True" />
+                <SelectField field="poids_070" selected="True" />
+                <SelectField field="poids_080" selected="True" />
+                <SelectField field="poids_090" selected="True" />
+                <SelectField field="poids_100" selected="True" />
+                <SelectField field="poids_110" selected="True" />
+                <SelectField field="poids_120" selected="True" />
+                <SelectField field="poids_130" selected="True" />
+                <SelectField field="poids_140" selected="True" />
+                <SelectField field="poids_170" selected="True" />
+                <SelectField field="poids_180" selected="True" />
+                <SelectField field="poids_190" selected="True" />
+                <SelectField field="poids_200" selected="True" />
+                <SelectField field="poids_210" selected="True" />
+                <SelectField field="poids_220" selected="True" />
+                <SelectField field="poids_alim" selected="True" />
+                <SelectField field="poids_anim" selected="True" />
+                <SelectField field="poids_ete" selected="True" />
+                <SelectField field="poids_favori_art" selected="True" />
+                <SelectField field="poids_favori_ssfam" selected="True" />
+                <SelectField field="poids_jard" selected="True" />
+                <SelectField field="poids_mais" selected="True" />
+                <SelectField field="poids_promo" selected="True" />
+                <SelectField field="poids_we" selected="True" />
+                <SelectField field="profil_panier" selected="False" />
+                <SelectField field="profil_promo" selected="False" />
+                <SelectField field="profil_tick" selected="False" />
+                <SelectField field="profil_we" selected="False" />
+                <SelectField field="qte_art" selected="True" />
+                <SelectField field="qte_art_favori" selected="True" />
+                <SelectField field="remise_moy" selected="True" type="Double" size="8" />
+                <SelectField field="Surf_moy" selected="True" />
+                <SelectField field="TAILLE_COMMUNE" selected="False" />
+                <SelectField field="tick_moy" selected="True" type="Double" size="8" />
+                <SelectField field="tick_moy_client" selected="False" />
+                <SelectField field="TR_AGE" selected="False" />
+                <SelectField field="TR_delay" selected="False" />
+                <SelectField field="TR_DUREE_ADH" selected="False" />
+                <SelectField field="typo_010" selected="False" />
+                <SelectField field="typo_020" selected="False" />
+                <SelectField field="typo_030" selected="False" />
+                <SelectField field="typo_050" selected="False" />
+                <SelectField field="typo_060" selected="False" />
+                <SelectField field="typo_070" selected="False" />
+                <SelectField field="typo_080" selected="False" />
+                <SelectField field="typo_090" selected="False" />
+                <SelectField field="typo_100" selected="False" />
+                <SelectField field="typo_110" selected="False" />
+                <SelectField field="typo_120" selected="False" />
+                <SelectField field="typo_130" selected="False" />
+                <SelectField field="typo_140" selected="False" />
+                <SelectField field="typo_220" selected="False" />
+                <SelectField field="typo_alim" selected="False" />
+                <SelectField field="typo_anim" selected="False" />
+                <SelectField field="typo_conso_aut." selected="False" />
+                <SelectField field="typo_conso_ete" selected="False" />
+                <SelectField field="typo_conso_hiv" selected="False" />
+                <SelectField field="typo_conso_print." selected="False" />
+                <SelectField field="typo_jard" selected="False" />
+                <SelectField field="typo_mais" selected="False" />
+                <SelectField field="uvc_moy" selected="True" type="Double" size="8" />
+                <SelectField field="ZONE_HABITAT" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="750" y="391" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_31492_01b54e5dea4f254893743c9ff7cfd68f_\Engine_31492_6c3ec39de7eb514db58bdc93216f9cd1~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="750" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_31492_01b54e5dea4f254893743c9ff7cfd68f_\Engine_31492_2db9feb058740e43993124e1cd255112~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="534" y="511" width="360" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>https://www.youtube.com/watch?v=miDuI2jITzo</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="858" y="343" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="485" y="53" width="553" height="230" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>One hot encoding of categorical variables</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>One hot encoding of categorical variables</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;niv vie_&quot; + [niv_vie]" field="niv_vie" size="50" type="V_String" />
+                <FormulaField expression="&quot;civilité_&quot; + [CIVILITE]" field="CIVILITE" size="50" type="V_String" />
+                <FormulaField expression="&quot;zone habitat_&quot; + [ZONE_HABITAT]" field="ZONE_HABITAT" size="50" type="V_String" />
+                <FormulaField expression="&quot;attrition_&quot; + [ATTRITION]" field="ATTRITION" size="15" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>niv_vie = "niv vie_" + [niv_vie]
+CIVILITE = "civilité_" + [CIVILITE]
+ZONE_HABITA...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings>
+            <Position x="738" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (34)">IDCLIENT=False,CIVILITE=True,ZONE_HABITAT=True,niv_vie=True,ATTRITION=True</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="..\..\..\..\Downloads\One-Hot Encoder\One-Hot Encoder.yxmc" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="858" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_31492_01b54e5dea4f254893743c9ff7cfd68f_\Engine_31492_982add19afab1d4e98809ae50f7b2e43~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="510" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="IDCLIENT" selected="True" />
+                <SelectField field="CIVILITE" selected="True" />
+                <SelectField field="is_ADH_ACTIF" selected="False" type="String" size="15" />
+                <SelectField field="ZONE_HABITAT" selected="True" />
+                <SelectField field="niv_vie" selected="True" />
+                <SelectField field="exclu_mag" selected="False" type="String" size="15" />
+                <SelectField field="ATTRITION" selected="True" type="String" size="15" />
+                <SelectField field="delay_moy" selected="False" type="Double" size="8" />
+                <SelectField field="excl_univ" selected="False" type="String" size="15" />
+                <SelectField field="evol_nb_art_pct" selected="False" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="858" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="attrition_0" selected="False" />
+                <SelectField field="civilité_1_femme" selected="True" type="Bool" size="1" />
+                <SelectField field="civilité_2_homme" selected="False" type="Bool" size="1" />
+                <SelectField field="niv vie_1_aises" selected="True" type="Bool" size="1" />
+                <SelectField field="niv vie_2_moy_sup" selected="True" type="Bool" size="1" />
+                <SelectField field="niv vie_3_moy_inf" selected="True" type="Bool" size="1" />
+                <SelectField field="niv vie_4_modeste" selected="False" type="Bool" size="1" />
+                <SelectField field="zone habitat_1_Urbain" selected="True" type="Bool" size="1" />
+                <SelectField field="zone habitat_2_Periurbain" selected="True" type="Bool" size="1" />
+                <SelectField field="zone habitat_3_Rural" selected="False" type="Bool" size="1" />
+                <SelectField field="attrition_False" selected="False" type="Bool" size="1" />
+                <SelectField field="attrition_True" selected="False" type="Bool" size="1" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="954" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Data" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Parameters" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Data" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input55" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output16" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output16" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow variables and dataset preparation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6dba6481-febc-4bfb-a938-2c5405bdebf6" />
+      <Telemetry>
+        <PreviousWorkflowId value="d8b1f634-8b02-4d78-b288-14212e64dbc5" />
+        <OriginWorkflowId value="d8b1f634-8b02-4d78-b288-14212e64dbc5" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

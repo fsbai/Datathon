@@ -1,0 +1,1582 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\vyvy.es\Desktop\CLIENT.CSV</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CLIENT.CSV</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS" size="254" source="File: C:\Users\vyvy.es\Desktop\CLIENT.CSV" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_12936_39fd753351859240b1a77573a3300746_\Engine_12936_9389420d16f62b40ba1ecb9089a32d31~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="198" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="|" />
+          <NumFields value="10" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS" selected="False" />
+            <SelectField field="1" selected="True" rename="CustomerID" size="15" />
+            <SelectField field="2" selected="True" rename="Title" size="20" />
+            <SelectField field="3" selected="True" rename="Birthdate" size="30" />
+            <SelectField field="4" selected="True" rename="Store" size="30" />
+            <SelectField field="5" selected="True" rename="Subdate" size="30" />
+            <SelectField field="6" selected="True" rename="Redate" size="30" />
+            <SelectField field="7" selected="True" rename="EndSubdate" size="30" />
+            <SelectField field="8" selected="True" rename="VIP" size="15" />
+            <SelectField field="9" selected="True" rename="Insee" size="15" />
+            <SelectField field="10" selected="True" rename="Country" size="15" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="2286" y="737" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="CustomerID" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="CustomerID" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="CustomerID" />
+            </JoinInfo>
+            <JoinInfo connection="#4">
+              <Field field="CustomerID" />
+            </JoinInfo>
+            <JoinInfo connection="#5">
+              <Field field="CustomerID" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_birth" selected="False" />
+                <SelectField field="Input_#2_CustomerID" selected="False" rename="Input_#2_CustomerID" />
+                <SelectField field="Input_#2_Title" selected="False" rename="Input_#2_Title" />
+                <SelectField field="Input_#2_Store" selected="False" rename="Input_#2_Store" />
+                <SelectField field="Input_#2_Subdate" selected="False" rename="Input_#2_Subdate" />
+                <SelectField field="Input_#2_Redate" selected="False" rename="Input_#2_Redate" />
+                <SelectField field="Input_#2_EndSubdate" selected="False" rename="Input_#2_EndSubdate" />
+                <SelectField field="Input_#2_VIP" selected="False" rename="Input_#2_VIP" />
+                <SelectField field="Input_#2_Insee" selected="False" rename="Input_#2_Insee" />
+                <SelectField field="Input_#2_Country" selected="False" rename="Input_#2_Country" />
+                <SelectField field="Input_#2_birth" selected="False" rename="Input_#2_birth" />
+                <SelectField field="Input_#2_Bank_date" selected="False" />
+                <SelectField field="Input_#2_Bank_name" selected="False" />
+                <SelectField field="Input_#3_CustomerID" selected="False" rename="Input_#3_CustomerID" />
+                <SelectField field="Input_#3_Title" selected="False" rename="Input_#3_Title" />
+                <SelectField field="Input_#3_Store" selected="False" rename="Input_#3_Store" />
+                <SelectField field="Input_#3_Subdate" selected="False" rename="Input_#3_Subdate" />
+                <SelectField field="Input_#3_Redate" selected="False" rename="Input_#3_Redate" />
+                <SelectField field="Input_#3_EndSubdate" selected="False" rename="Input_#3_EndSubdate" />
+                <SelectField field="Input_#3_VIP" selected="False" rename="Input_#3_VIP" />
+                <SelectField field="Input_#3_Insee" selected="False" rename="Input_#3_Insee" />
+                <SelectField field="Input_#3_Country" selected="False" rename="Input_#3_Country" />
+                <SelectField field="Input_#3_birth" selected="False" rename="Input_#3_birth" />
+                <SelectField field="Input_#3_mois sub" selected="False" />
+                <SelectField field="Input_#4_CustomerID" selected="False" rename="Input_#4_CustomerID" />
+                <SelectField field="Input_#4_Title" selected="False" rename="Input_#4_Title" />
+                <SelectField field="Input_#4_Store" selected="False" rename="Input_#4_Store" />
+                <SelectField field="Input_#4_Subdate" selected="False" rename="Input_#4_Subdate" />
+                <SelectField field="Input_#4_Redate" selected="False" rename="Input_#4_Redate" />
+                <SelectField field="Input_#4_EndSubdate" selected="False" rename="Input_#4_EndSubdate" />
+                <SelectField field="Input_#4_VIP" selected="False" rename="Input_#4_VIP" />
+                <SelectField field="Input_#4_Insee" selected="False" rename="Input_#4_Insee" />
+                <SelectField field="Input_#4_Country" selected="False" rename="Input_#4_Country" />
+                <SelectField field="Input_#4_Age" selected="False" />
+                <SelectField field="Input_#5_CustomerID" selected="False" rename="Input_#5_CustomerID" />
+                <SelectField field="Input_#5_Title" selected="False" rename="Input_#5_Title" />
+                <SelectField field="Input_#5_Store" selected="False" rename="Input_#5_Store" />
+                <SelectField field="Input_#5_Subdate" selected="False" rename="Input_#5_Subdate" />
+                <SelectField field="Input_#5_Redate" selected="False" rename="Input_#5_Redate" />
+                <SelectField field="Input_#5_EndSubdate" selected="False" rename="Input_#5_EndSubdate" />
+                <SelectField field="Input_#5_VIP" selected="True" rename="Input_#5_VIP" />
+                <SelectField field="Input_#5_Insee" selected="False" rename="Input_#5_Insee" />
+                <SelectField field="Input_#5_Country" selected="False" rename="Input_#5_Country" />
+                <SelectField field="Input_#5_birth" selected="False" rename="Input_#5_birth" />
+                <SelectField field="Input_#5_Age" selected="False" rename="Input_#5_Age" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2514" y="737" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\vyvy.es\Desktop\TABLE_CLIENT_CLEAN.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TABLE_CLIENT_CLEAN.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings>
+        <Position x="1038" y="1613" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">CustomerID=True,Title=True,Store=True,Subdate=True,Redate=True,EndSubdate=True,VIP=True,Insee=True,Country=True,birth=True,Age=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="881" y="831" width="1226" height="711" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>AGE</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AGE</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="906" y="928" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeDiff('2020-12-31',[birth], &quot;years&quot;)" field="Age" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Age = DateTimeDiff('2020-12-31',[birth], "years")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1001" y="880" width="529" height="261" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>AGE BINS</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>AGE BINS</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="38">
+              <GuiSettings Plugin="PlotlyCharting">
+                <Position x="1446" y="1025" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ChartingFields>
+                    <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                      <type>bar</type>
+                      <mode>markers</mode>
+                      <orientation>v</orientation>
+                      <xsrc>Age_bin</xsrc>
+                      <ysrc>Count</ysrc>
+                      <x />
+                      <y />
+                    </Traces>
+                    <Layout>
+                      <title>
+                        <text>Number of customers per age bin</text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                        <size>12</size>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>700</width>
+                      <height>849</height>
+                      <showlegend>true</showlegend>
+                      <hovermode>closest</hovermode>
+                      <legend>
+                        <font>
+                          <size>12</size>
+                        </font>
+                        <borderwidth>0</borderwidth>
+                      </legend>
+                      <margin>
+                        <pad>0</pad>
+                        <t>100</t>
+                        <b>80</b>
+                        <l>80</l>
+                        <r>80</r>
+                      </margin>
+                      <xaxis>
+                        <range>-0.5</range>
+                        <range>4.5</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Age_bin</text>
+                        </title>
+                        <type>category</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>0</range>
+                        <range>356937.89473684214</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>Count</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                    </Layout>
+                  </ChartingFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+            </Node>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="1338" y="1025" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1036">
+                    <Field field="Age_bin" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Age_bin - Croissant</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="14">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+                <Position x="1026" y="929" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Method>Manual</Method>
+                  <Manual>
+                    <Field>Age</Field>
+                    <Cutoffs>18
+34
+44
+64
+100</Cutoffs>
+                  </Manual>
+                  <GroupFields orderChanged="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+            </Node>
+            <Node ToolID="15">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1134" y="929" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="IF  [Tile_Num] = 2 THEN '1_&lt;35' &#xA;ELSEIF [Tile_Num] = 3 THEN '2_35-44' &#xA;ELSEIF [Tile_Num] = 4 THEN '3_45-64' &#xA;ELSEIF [Tile_Num] = 5 THEN '4_&gt;65' &#xA;ELSE 'Unknown'&#xA;ENDIF" field="Age_bin" size="15" type="V_String" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Age_bin = IF  [Tile_Num] = 2 THEN '1_&lt;35' 
+ELSEIF [Tile_Num] = 3 THEN '2_35-44' ...</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="17">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1230" y="1025" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="Age_bin" action="GroupBy" rename="Age_bin" />
+                    <SummarizeField field="CustomerID" action="Count" rename="Count" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="18">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1230" y="929" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="birth" selected="False" />
+                    <SelectField field="Tile_Num" selected="False" />
+                    <SelectField field="Tile_SequenceNum" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1001" y="1156" width="1081" height="361" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>AGE CLEANING OUTLIERS</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>AGE CLEANING OUTLIERS</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="45">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1026" y="1205" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="Age" action="GroupBy" rename="Age" />
+                    <SummarizeField field="Age" action="Min" rename="Min_Age" />
+                    <SummarizeField field="Age" action="Max" rename="Max_Age" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="43">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="1134" y="1265" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1036">
+                    <Field field="Age" order="Descending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Age - Décroissant</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="44">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1242" y="1265" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="IF  [Age] &gt;18 AND [Age] &lt;99 THEN [Age]&#xA;ELSE Null()&#xA;ENDIF" field="Age" size="8" type="Double" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[Age = IF  [Age] >18 AND [Age] <99 THEN [Age]
+ELSE Null()
+ENDIF
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="47">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
+                <Position x="1626" y="1349" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <GroupByFields />
+                  <RunningTotalFields>
+                    <Field field="CountNonNull_Age" />
+                  </RunningTotalFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunningTotal" />
+            </Node>
+            <Node ToolID="48">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="1530" y="1349" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="1036">
+                    <Field field="Age" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Age - Croissant</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="50">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1338" y="1349" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Age" selected="True" type="Int16" size="2" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="40">
+              <GuiSettings Plugin="PlotlyCharting">
+                <Position x="1998" y="1361" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ChartingFields>
+                    <Traces>
+                      <type>bar</type>
+                      <mode>lines</mode>
+                      <orientation>v</orientation>
+                      <xsrc>Age</xsrc>
+                      <ysrc>CountNonNull_Age</ysrc>
+                      <boxpoints>false</boxpoints>
+                      <line>
+                        <width>2</width>
+                      </line>
+                      <x />
+                      <y />
+                    </Traces>
+                    <Traces>
+                      <orientation>v</orientation>
+                      <type>scatter</type>
+                      <mode>lines</mode>
+                      <xsrc>Age</xsrc>
+                      <ysrc>PCT_cumAge</ysrc>
+                      <yaxis>y2</yaxis>
+                      <x />
+                      <y />
+                    </Traces>
+                    <Layout>
+                      <title>
+                        <text>Number of customers per age bin</text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                        <size>12</size>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>700</width>
+                      <height>849</height>
+                      <showlegend>true</showlegend>
+                      <hovermode>closest</hovermode>
+                      <legend>
+                        <font>
+                          <size>12</size>
+                        </font>
+                        <borderwidth>0</borderwidth>
+                      </legend>
+                      <margin>
+                        <pad>0</pad>
+                        <t>100</t>
+                        <b>80</b>
+                        <l>80</l>
+                        <r>80</r>
+                      </margin>
+                      <xaxis>
+                        <range>-1</range>
+                        <range>96</range>
+                        <autorange>false</autorange>
+                        <title>
+                          <text>Age_bin</text>
+                        </title>
+                        <tickfont>
+                          <size>12</size>
+                        </tickfont>
+                        <nticks>0</nticks>
+                        <type>category</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>0</range>
+                        <range>13000</range>
+                        <autorange>false</autorange>
+                        <title>
+                          <text>Count</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                      <yaxis2>
+                        <side>right</side>
+                        <showgrid>false</showgrid>
+                        <overlaying>y</overlaying>
+                        <type>linear</type>
+                        <range>0</range>
+                        <range>100</range>
+                        <autorange>false</autorange>
+                      </yaxis2>
+                    </Layout>
+                  </ChartingFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+            </Node>
+            <Node ToolID="54">
+              <GuiSettings>
+                <Position x="1530" y="1277" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="Value">Age</Value>
+                  <Value name="Weight">CountNonNull_Age</Value>
+                  <Value name="OutputFieldName">Moyenne Pondérée</Value>
+                  <Value name="GroupFields" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="WeightedAvg.yxmc" />
+            </Node>
+            <Node ToolID="56">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+                <Position x="1818" y="1361" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FieldType>Numeric</FieldType>
+                  <Fields orderChanged="False">
+                    <Field name="Age" />
+                    <Field name="CountNonNull_Age" selected="False" />
+                    <Field name="TOTAL_cum_age" selected="False" />
+                    <Field name="TOTAL_age" selected="False" />
+                    <Field name="*Unknown" selected="False" />
+                  </Fields>
+                  <NewFieldAddOn>PCT_cum</NewFieldAddOn>
+                  <NewFieldAddOnPos>Prefix</NewFieldAddOnPos>
+                  <CopyOutput value="True" />
+                  <Expression>[TOTAL_cum_age]/[TOTAL_age]*100</Expression>
+                  <ChangeFieldType value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[TOTAL_cum_age]/[TOTAL_age]*100</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1434" y="1349" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="Age" action="GroupBy" rename="Age" />
+                    <SummarizeField field="Age" action="CountNonNull" rename="CountNonNull_Age" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="57">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="1530" y="1433" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="CountNonNull_Age" action="Sum" rename="TOTAL_age" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="58">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+                <Position x="1734" y="1361" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <CartesianMode>Error</CartesianMode>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Output">
+                      <OrderChanged value="False" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Target_RunTot_CountNonNull_Age" selected="True" rename="TOTAL_cum_age" input="Target_" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+            </Node>
+            <Node ToolID="59">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1902" y="1361" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="TOTAL_age" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="881" y="88" width="349" height="226" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>WEEK END</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>WEEK END</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="906" y="137" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([Subdate], '%A', &quot;English&quot;)" field="jour sub" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[jour sub = DateTimeFormat([Subdate], '%A', "English")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1026" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [jour sub] =='Saturday' OR [jour sub] =='Sunday' THEN 1 ELSE 0 ENDIF" field="is_weekend" size="1" type="Bool" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>is_weekend = IF [jour sub] =='Saturday' OR [jour sub] =='Sunday' THEN 1 ELSE 0 E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1146" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="jour sub" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="880" y="328" width="865" height="248" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>BANK HOLIDAYS</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>BANK HOLIDAYS</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1614" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([Bank_date]) THEN 0 ELSE 1 ENDIF" field="is_ferie" size="1" type="Bool" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[is_ferie = IF IsNull([Bank_date]) THEN 0 ELSE 1 ENDIF
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1386" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="birth" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Bank_date" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_url" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1518" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="905" y="377" width="433" height="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>French bank holidays (API)</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>French bank holidays (API)</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="23">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="1254" y="426" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Field2" selected="False" />
+                    <SelectField field="DownloadHeaders" selected="False" />
+                    <SelectField field="JSON_Name" selected="True" rename="Bank_date" type="Date" size="10" />
+                    <SelectField field="JSON_ValueString" selected="True" rename="Bank_name" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="24">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+                <Position x="930" y="426" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <NumRows value="1" />
+                  <Fields>
+                    <Field name="url" />
+                    <Field name="Field2" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>https://calendrier.api.gouv.fr/jours-feries/metropole.json</c>
+                      <c>application/json</c>
+                    </r>
+                  </Data>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+            </Node>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+                <Position x="1038" y="426" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <URLField>url</URLField>
+                  <OutputMode>String</OutputMode>
+                  <CodePage>65001</CodePage>
+                  <EncodeURLs value="True" />
+                  <Headers>
+                    <NameValues />
+                    <Fields orderChanged="False">
+                      <Field name="url" selected="False" />
+                      <Field name="Field2" selected="False" />
+                      <Field name="*Unknown" selected="False" />
+                    </Fields>
+                  </Headers>
+                  <Payload>
+                    <HTTPAction>GET</HTTPAction>
+                    <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                    <ComposeNameValues />
+                    <ComposeFields orderChanged="False">
+                      <Field name="url" selected="False" />
+                      <Field name="Field2" selected="False" />
+                      <Field name="*Unknown" selected="False" />
+                    </ComposeFields>
+                  </Payload>
+                  <numConnections>2</numConnections>
+                  <Timeout>600</Timeout>
+                  <EnableRPM value="False" />
+                  <DcmAdvancedAuth value="False" />
+                  <Password />
+                  <UserName />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+                <Position x="1146" y="426" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <JSON_Field>DownloadData</JSON_Field>
+                  <IncludeInOutput value="False" />
+                  <SingleField value="True" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1074" y="486" width="100" height="40" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>penser à mettre les API en cache (clic droit + cache) pour limiter la conso de token</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="545" y="89" width="241" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DATE</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>DATE</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="570" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeParse([Birthdate],'%d/%m/%y')" field="birth" size="1073741823" type="V_WString" />
+                <FormulaField expression="DateTimeParse([Subdate],'%d/%m/%y')" field="Subdate" size="30" type="V_String" />
+                <FormulaField expression="DateTimeParse([Redate],'%d/%m/%y')" field="Redate" size="30" type="V_String" />
+                <FormulaField expression="DateTimeParse([EndSubdate],'%d/%m/%y')" field="EndSubdate" size="30" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>birth = DateTimeParse([Birthdate],'%d/%m/%y')
+Subdate = DateTimeParse([Subdate],...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="702" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Birthdate" selected="False" />
+                <SelectField field="Subdate" selected="True" type="Date" size="10" />
+                <SelectField field="Redate" selected="True" type="Date" size="10" />
+                <SelectField field="EndSubdate" selected="True" type="Date" size="10" />
+                <SelectField field="birth" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="881" y="593" width="433" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>SEASON</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>SEASON</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="906" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([Subdate], '%m', &quot;English&quot;)" field="mois sub" size="2147483647" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[mois sub = DateTimeFormat([Subdate], '%m', "English")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1122" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF  [mois sub] &gt; 2 AND [mois sub] &lt;= 5 THEN 'spring'&#xA;ELSEIF [mois sub] &gt; 5 AND [mois sub]&lt;= 8 THEN 'summer'&#xA;ELSEIF [mois sub] &gt; 8 AND [mois sub]&lt;= 11 THEN 'automn'&#xA;ELSE 'winter'&#xA;ENDIF" field="season" size="15" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>season = IF  [mois sub] &gt; 2 AND [mois sub] &lt;= 5 THEN 'spring'
+ELSEIF [mois sub] ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1014" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="mois sub" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1230" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="jour sub" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="67" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="58" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow_gestion dates</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5e29d7ea-a283-4b38-997a-31fb7165643a" />
+      <Telemetry>
+        <PreviousWorkflowId value="c97f1932-651d-4b4c-846d-bfadb611b673" />
+        <OriginWorkflowId value="b8a2a983-52ee-47bd-97a7-857c9412c5a2" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

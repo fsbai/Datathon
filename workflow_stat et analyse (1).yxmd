@@ -1,0 +1,2544 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS" selected="False" />
+            <SelectField field="1" selected="True" rename="CustomerID" size="15" />
+            <SelectField field="2" selected="True" rename="Title" size="20" />
+            <SelectField field="3" selected="True" rename="Birthdate" size="30" />
+            <SelectField field="4" selected="True" rename="Store" size="30" />
+            <SelectField field="5" selected="True" rename="Subdate" size="30" />
+            <SelectField field="6" selected="True" rename="Redate" size="30" />
+            <SelectField field="7" selected="True" rename="EndSubdate" size="30" />
+            <SelectField field="8" selected="True" rename="VIP" size="15" />
+            <SelectField field="9" selected="True" rename="Insee" size="15" />
+            <SelectField field="10" selected="True" rename="Country" size="15" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="198" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="|" />
+          <NumFields value="10" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_e58b02924c01bd41ae138efc189a7521~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\vyvy.es\Desktop\CLIENT.CSV</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CLIENT.CSV</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IDCLIENT|CIVILITE|DATENAISSANCE|MAGASIN|DATEDEBUTADHESION|DATEREADHESION|DATEFINADHESION|VIP|CODEINSEE|PAYS" size="254" source="File: C:\Users\vyvy.es\Desktop\CLIENT.CSV" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>4701229_AWP4R6LO.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Store Number" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Customer Segment" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="First Name" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Last Name" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Address" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Zip" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Visits" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Spend" source="File: C:\Users\vyvy.es\Downloads\4701229_AWP4R6LO.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="870" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Ignorer les 1 premières lignes</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="738" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1036">
+            <Field field="Sum_Visits" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_Visits - Décroissant</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="870" y="1230" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>1 premières lignes</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2346" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1036">
+            <Field field="PMG" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PMG - Croissant</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2238" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PMG" action="GroupBy" rename="PMG" />
+            <SummarizeField field="City" action="Count" rename="NB" />
+            <SummarizeField field="TOTAL_spend" action="Sum" rename="TOTAL_spend" />
+            <SummarizeField field="PCT_spend" action="Sum" rename="PCT_spend" />
+            <SummarizeField field="TOTAL_visit" action="Sum" rename="TOTAL_visit" />
+            <SummarizeField field="PCT_visit" action="Sum" rename="PCT_visit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2130" y="1098" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="City" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="City" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Sum_Visits" selected="True" rename="TOTAL_visit" input="Left_" />
+                <SelectField field="Left_Avg_Visits" selected="True" rename="AVG_visit" input="Left_" />
+                <SelectField field="Left_XCol_Visits" selected="True" rename="PCT_visit" input="Left_" />
+                <SelectField field="Left_Sum_Spend" selected="True" rename="TOTAL_spend" input="Left_" />
+                <SelectField field="Left_Avg_Spend" selected="True" rename="AGV_spend" input="Left_" />
+                <SelectField field="Left_XCol_Spend" selected="True" rename="PCT_spend" input="Left_" />
+                <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                <SelectField field="Right_indice visites (vs moy)" selected="True" rename="INDEX_visit" input="Right_" />
+                <SelectField field="Right_indice depenses (vs moy)" selected="True" rename="INDEX_spend" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="197" y="869" width="493" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Creation totaux, moy et % (base 100% = somme colonnes)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Creation totaux, moy et % (base 100% = somme colonnes)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="474" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="City" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Sum" />
+                <Method method="Avg" />
+                <Method method="XCol" />
+                <Method method="TotRow" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="City" size="255" source="CrossTab:Group:Sum:Avg:XCol:" type="V_String" />
+                <Field name="Sum_Visits" source="CrossTab:Header:Name:Visits:Sum:" type="Double" />
+                <Field name="Avg_Visits" source="CrossTab:Header:Name:Visits:Avg:" type="Double" />
+                <Field name="XCol_Visits" source="CrossTab:Header:Name:Visits:XCol:" type="Double" />
+                <Field name="Sum_Spend" source="CrossTab:Header:Name:Spend:Sum:" type="Double" />
+                <Field name="Avg_Spend" source="CrossTab:Header:Name:Spend:Avg:" type="Double" />
+                <Field name="XCol_Spend" source="CrossTab:Header:Name:Spend:XCol:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="342" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="City" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="Customer_ID" selected="False" />
+                <Field field="Store Number" selected="False" />
+                <Field field="Customer Segment" selected="False" />
+                <Field field="First Name" selected="False" />
+                <Field field="Last Name" selected="False" />
+                <Field field="Address" selected="False" />
+                <Field field="City" selected="False" />
+                <Field field="State" selected="False" />
+                <Field field="Zip" selected="False" />
+                <Field field="Visits" selected="True" />
+                <Field field="Spend" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="222" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="606" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Sum_Visits" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="Avg_Visits" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_Visits" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="Sum_Spend" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="Avg_Spend" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_Spend" selected="True" type="FixedDecimal" size="19.1" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2429" y="1169" width="733" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ANALYSE - DONNEES PAR CLASSES</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffd7" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>ANALYSE - DONNEES PAR CLASSES</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="2622" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="PMG" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Sum" />
+                <Method method="XCol" />
+                <Method method="TotRow" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PMG" size="15" source="CrossTab:Group:Sum:XCol:" type="V_String" />
+                <Field name="Sum_NB" source="CrossTab:Header:Name:NB:Sum:" type="Double" />
+                <Field name="XCol_NB" source="CrossTab:Header:Name:NB:XCol:" type="Double" />
+                <Field name="Sum_TOTAL_spend" source="CrossTab:Header:Name:TOTAL_spend:Sum:" type="Double" />
+                <Field name="XCol_TOTAL_spend" source="CrossTab:Header:Name:TOTAL_spend:XCol:" type="Double" />
+                <Field name="Sum_PCT_spend" source="CrossTab:Header:Name:PCT_spend:Sum:" type="Double" />
+                <Field name="XCol_PCT_spend" source="CrossTab:Header:Name:PCT_spend:XCol:" type="Double" />
+                <Field name="Sum_TOTAL_visit" source="CrossTab:Header:Name:TOTAL_visit:Sum:" type="Double" />
+                <Field name="XCol_TOTAL_visit" source="CrossTab:Header:Name:TOTAL_visit:XCol:" type="Double" />
+                <Field name="Sum_PCT_visit" source="CrossTab:Header:Name:PCT_visit:Sum:" type="Double" />
+                <Field name="XCol_PCT_visit" source="CrossTab:Header:Name:PCT_visit:XCol:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="2538" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="PMG" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="PMG" selected="False" />
+                <Field field="NB" selected="True" />
+                <Field field="TOTAL_spend" selected="True" />
+                <Field field="PCT_spend" selected="True" />
+                <Field field="TOTAL_visit" selected="True" />
+                <Field field="PCT_visit" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="2454" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2706" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="PMG" selected="True" />
+                <SelectField field="Sum_NB" selected="True" rename="NB" />
+                <SelectField field="XCol_NB" selected="True" rename="WGHT_nb" type="FixedDecimal" size="19.1" />
+                <SelectField field="Sum_TOTAL_spend" selected="True" rename="TOTAL_spend" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_TOTAL_spend" selected="True" rename="WGHT_spend" type="FixedDecimal" size="19.1" />
+                <SelectField field="Sum_TOTAL_visit" selected="True" rename="TOTAL_visit" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_TOTAL_visit" selected="True" rename="WGHT_visit" type="FixedDecimal" size="19.1" />
+                <SelectField field="Sum_Visits" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="Avg_Visits" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_Visits" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="Sum_Spend" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="Avg_Spend" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="XCol_Spend" selected="False" type="FixedDecimal" size="19.1" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="2790" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="PMG" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PMG - Croissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="2994" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <ysrc>WGHT_nb</ysrc>
+                  <xsrc>PMG</xsrc>
+                  <name>Weight number people per clas</name>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(0, 130, 202)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>bar</type>
+                  <name>Weight spendings per class</name>
+                  <xsrc>PMG</xsrc>
+                  <ysrc>WGHT_spend</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(23, 190, 207)</color>
+                  </marker>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>bar</type>
+                  <name>Weight visits per class</name>
+                  <xsrc>PMG</xsrc>
+                  <ysrc>WGHT_visit</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <color>rgb(121, 233, 215)</color>
+                  </marker>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>
+                    </text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>3.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Age_bin</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>105.26315789473685</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Count</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="3078" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_27bd32f2d095e043a8180edb3e98af7f~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Rapport</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="2898" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Skip</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Ignorer les 1 premières lignes</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1025" y="773" width="625" height="309" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ANALYSE - TOP  / FLOP</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffe8" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>ANALYSE - TOP  / FLOP</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="1434" y="822" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <ysrc>Sum_Visits</ysrc>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                  <name>Nbre de visites par ville</name>
+                  <xsrc>City</xsrc>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <xsrc>City</xsrc>
+                  <yaxis>y2</yaxis>
+                  <ysrc>Sum_Spend</ysrc>
+                  <marker>
+                    <size>21</size>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <symbol>hexagon2</symbol>
+                  </marker>
+                  <name>Depenses par ville</name>
+                  <decreasing>
+                    <line>
+                      <color>#7f7f7f</color>
+                    </line>
+                    <fillcolor>rgba(127, 127, 127, 0.5)</fillcolor>
+                  </decreasing>
+                  <increasing>
+                    <line>
+                      <color>#17becf</color>
+                    </line>
+                    <fillcolor>rgba(23, 190, 207, 0.5)</fillcolor>
+                  </increasing>
+                  <line>
+                    <width>2</width>
+                  </line>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>nber of customer per gender</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>19.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Age_bin</text>
+                    </title>
+                    <type>category</type>
+                    <tickfont>
+                      <size>12</size>
+                    </tickfont>
+                    <nticks>0</nticks>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>18629.473684210527</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Count</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                  <yaxis2>
+                    <side>right</side>
+                    <showgrid>false</showgrid>
+                    <overlaying>y</overlaying>
+                    <type>linear</type>
+                    <range>-957343.65000000037</range>
+                    <range>18242513.35</range>
+                    <autorange>true</autorange>
+                  </yaxis2>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1566" y="822" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_0f3231d74e02d048a1355ebc75982b70~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Rapport</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1566" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_1b8437455f1516428a8a01e02b61764b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1170" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City" selected="True" />
+                <SelectField field="XCol_Visits" selected="True" />
+                <SelectField field="XCol_Spend" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1290" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="XCol_Spend" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>XCol_Spend - Décroissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="1434" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>bar</type>
+                  <mode>lines</mode>
+                  <orientation>v</orientation>
+                  <xsrc>City</xsrc>
+                  <ysrc>XCol_Spend</ysrc>
+                  <stackgroup>1</stackgroup>
+                  <valuessrc>City</valuessrc>
+                  <labelssrc>XCol_Visits</labelssrc>
+                  <name>% des dépenses</name>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>
+                    </text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>19.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>City</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>48.315789473684212</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>XCol_Spend</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1290" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="XCol_Visits" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>XCol_Visits - Décroissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1566" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_06e3ec51f39fe04c821565ba5efd8bb0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Rapport</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="1434" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <name>% des visites</name>
+                  <orientation>v</orientation>
+                  <xsrc>City</xsrc>
+                  <ysrc>XCol_Visits</ysrc>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>
+                    </text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>19.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>City</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>46.105263157894733</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>XCol_Visits</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1050" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="XCol_Visits" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>XCol_Visits - Décroissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1025" y="1169" width="638" height="362" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Calcul indice de consommation (vs la moyenne du dataset)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Calcul indice de consommation (vs la moyenne du dataset)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1050" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_City" selected="True" input="Target_" />
+                    <SelectField field="Target_Sum_Visits" selected="True" input="Target_" />
+                    <SelectField field="Target_Avg_Visits" selected="True" input="Target_" />
+                    <SelectField field="Target_XCol_Visits" selected="True" input="Target_" />
+                    <SelectField field="Target_Sum_Spend" selected="True" input="Target_" />
+                    <SelectField field="Target_Avg_Spend" selected="True" input="Target_" />
+                    <SelectField field="Target_XCol_Spend" selected="True" input="Target_" />
+                    <SelectField field="Source_City" selected="False" rename="Source_City" input="Source_" />
+                    <SelectField field="Source_Sum_Visits" selected="False" rename="Source_Sum_Visits" input="Source_" />
+                    <SelectField field="Source_Avg_Visits" selected="True" rename="TOTAL_Avg_Visits" input="Source_" />
+                    <SelectField field="Source_XCol_Visits" selected="False" rename="Source_XCol_Visits" input="Source_" />
+                    <SelectField field="Source_Sum_Spend" selected="False" rename="Source_Sum_Spend" input="Source_" />
+                    <SelectField field="Source_Avg_Spend" selected="True" rename="TOTAL_Avg_Spend" input="Source_" />
+                    <SelectField field="Source_XCol_Spend" selected="False" rename="Source_XCol_Spend" input="Source_" />
+                    <SelectField field="Source_Name" selected="False" rename="AVG total visit" input="Source_" />
+                    <SelectField field="Source_Value" selected="False" rename="AVG total valeur" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1170" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Avg_Visits]/[TOTAL_Avg_Visits]*100" field="indice visites (vs moy)" size="19.0" type="FixedDecimal" />
+                <FormulaField expression="[Avg_Spend]/[TOTAL_Avg_Spend]*100&#xA;" field="indice depenses (vs moy)" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>indice visites (vs moy) = [Avg_Visits]/[TOTAL_Avg_Visits]*100
+indice depenses (v...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1302" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Sum_Visits" selected="False" />
+                <SelectField field="Avg_Visits" selected="False" />
+                <SelectField field="XCol_Visits" selected="False" />
+                <SelectField field="Sum_Spend" selected="False" />
+                <SelectField field="Avg_Spend" selected="False" />
+                <SelectField field="XCol_Spend" selected="False" />
+                <SelectField field="TOTAL_Avg_Visits" selected="False" />
+                <SelectField field="TOTAL_Avg_Spend" selected="False" />
+                <SelectField field="indice depenses (vs moy)" selected="True" type="FixedDecimal" size="19.0" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1409" y="1265" width="229" height="241" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>ANALYSE - indice sur/sous</Caption>
+              <Style TextColor="#314c4a" FillColor="#ffffd7" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>ANALYSE - indice sur/sous</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="43">
+              <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+                <Position x="1434" y="1338" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TableMode>Basic</TableMode>
+                  <GroupingFields orderChanged="False">
+                    <Field name="City" />
+                    <Field name="indice visites (vs moy)" />
+                    <Field name="indice depenses (vs moy)" />
+                  </GroupingFields>
+                  <Width>566</Width>
+                  <ShowHeader value="True" />
+                  <ShowBarGraph value="False" />
+                  <TableFields orderChanged="False">
+                    <Field name="City" selected="True" Alignment="Left" Width="113" />
+                    <Field name="indice visites (vs moy)" selected="True" Alignment="Right" Width="158" />
+                    <Field name="indice depenses (vs moy)" selected="True" Alignment="Right" Width="158" Places="0" />
+                    <Field name="*Unknown" selected="True" Alignment="Right" />
+                  </TableFields>
+                  <TableStyles>
+                    <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                    <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                    <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                    <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+                  </TableStyles>
+                  <StyleRules>
+                    <Rule Name="b0c68dbd-93a3-4d14-8286-1d6db627465d">
+                      <RowRule value="True" />
+                      <HighPrecedence value="False" />
+                      <Field />
+                      <Test>Simple</Test>
+                      <ApplyTo>Data</ApplyTo>
+                      <SimpleVar>indice visites (vs moy)</SimpleVar>
+                      <SimpleOp>&gt;</SimpleOp>
+                      <SimpleConst>105</SimpleConst>
+                      <Formula>1</Formula>
+                      <Style BackColor="#b3ffb3" />
+                      <PrettyName>surindice visite</PrettyName>
+                    </Rule>
+                    <Rule Name="cbb680f7-1646-46fc-944c-73423b4b5fb0">
+                      <RowRule value="True" />
+                      <HighPrecedence value="False" />
+                      <Field />
+                      <Test>Simple</Test>
+                      <ApplyTo>Data</ApplyTo>
+                      <SimpleVar>indice visites (vs moy)</SimpleVar>
+                      <SimpleOp>&lt;</SimpleOp>
+                      <SimpleConst>95</SimpleConst>
+                      <Formula>1</Formula>
+                      <Style BackColor="#ffbfbf" />
+                      <PrettyName>sousindice visite</PrettyName>
+                    </Rule>
+                    <Rule Name="34dacac5-f0aa-43ca-8f55-077be428d676">
+                      <RowRule value="True" />
+                      <HighPrecedence value="True" />
+                      <Field />
+                      <Test>Simple</Test>
+                      <ApplyTo>Data</ApplyTo>
+                      <SimpleVar>indice depenses (vs moy)</SimpleVar>
+                      <SimpleOp>&gt;</SimpleOp>
+                      <SimpleConst>105</SimpleConst>
+                      <Formula>1</Formula>
+                      <Style BackColor="#bfffbf" />
+                      <PrettyName>sur indice depense</PrettyName>
+                    </Rule>
+                    <Rule Name="4d1bb3df-e33a-4821-9c92-04e42f41cde1">
+                      <RowRule value="True" />
+                      <HighPrecedence value="True" />
+                      <Field />
+                      <Test>Simple</Test>
+                      <ApplyTo>Data</ApplyTo>
+                      <SimpleVar>indice depenses (vs moy)</SimpleVar>
+                      <SimpleOp>&lt;</SimpleOp>
+                      <SimpleConst>95</SimpleConst>
+                      <Formula>1</Formula>
+                      <Style BackColor="#ffc6c6" />
+                      <PrettyName>sous indice depense</PrettyName>
+                    </Rule>
+                  </StyleRules>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Table de base</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+            </Node>
+            <Node ToolID="44">
+              <GuiSettings Plugin="PlotlyCharting">
+                <Position x="1434" y="1422" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ChartingFields>
+                    <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                      <type>bar</type>
+                      <mode>markers</mode>
+                      <orientation>v</orientation>
+                      <xsrc>City</xsrc>
+                      <ysrc>indice visites (vs moy)</ysrc>
+                      <textposition>None</textposition>
+                      <marker>
+                        <line>
+                          <width>0</width>
+                        </line>
+                      </marker>
+                      <transforms json:Array="true">
+                        <type>groupby</type>
+                        <groupssrc>City</groupssrc>
+                        <styles>
+                          <target>AURORA</target>
+                          <value>
+                            <visible>legendonly</visible>
+                            <name>AURORA</name>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(127, 127, 127)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>DENVER</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(127, 127, 127)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>ARVADA</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>BROOMFIELD</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>LITTLETON</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(182, 251, 175)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>ENGLEWOOD</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(127, 127, 127)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>WESTMINSTER</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(182, 251, 175)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>WHEAT RIDGE</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>PARKER</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>GOLDEN</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>COMMERCE CITY</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(5, 220, 172)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>LOUISVILLE</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>THORNTON</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(255, 198, 195)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>MORRISON</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(182, 251, 175)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>BOULDER</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(5, 220, 172)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>LAFAYETTE</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(182, 251, 175)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>LONE TREE</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(5, 220, 172)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>CASTLE ROCK</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(214, 39, 40)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>BRIGHTON</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(214, 39, 40)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <styles>
+                          <target>HENDERSON</target>
+                          <value>
+                            <marker>
+                              <line>
+                                <width>0</width>
+                              </line>
+                              <color>rgb(214, 39, 40)</color>
+                            </marker>
+                          </value>
+                        </styles>
+                        <groups>DENVER</groups>
+                        <groups>AURORA</groups>
+                        <groups>ARVADA</groups>
+                        <groups>BROOMFIELD</groups>
+                        <groups>LITTLETON</groups>
+                        <groups>ENGLEWOOD</groups>
+                        <groups>WESTMINSTER</groups>
+                        <groups>WHEAT RIDGE</groups>
+                        <groups>PARKER</groups>
+                        <groups>GOLDEN</groups>
+                        <groups>COMMERCE CITY</groups>
+                        <groups>LOUISVILLE</groups>
+                        <groups>THORNTON</groups>
+                        <groups>MORRISON</groups>
+                        <groups>BOULDER</groups>
+                        <groups>LAFAYETTE</groups>
+                        <groups>LONE TREE</groups>
+                        <groups>CASTLE ROCK</groups>
+                        <groups>BRIGHTON</groups>
+                        <groups>HENDERSON</groups>
+                      </transforms>
+                      <visible>true</visible>
+                    </Traces>
+                    <Layout>
+                      <title>
+                        <text>
+                        </text>
+                      </title>
+                      <font>
+                        <family>sans-serif</family>
+                        <size>12</size>
+                      </font>
+                      <autosize>false</autosize>
+                      <width>700</width>
+                      <height>849</height>
+                      <showlegend>true</showlegend>
+                      <hovermode>closest</hovermode>
+                      <xaxis>
+                        <range>-0.5</range>
+                        <range>18.5</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>City</text>
+                        </title>
+                        <tickfont>
+                          <size>12</size>
+                        </tickfont>
+                        <nticks>0</nticks>
+                        <type>category</type>
+                      </xaxis>
+                      <yaxis>
+                        <range>0</range>
+                        <range>171.96660866382771</range>
+                        <autorange>true</autorange>
+                        <title>
+                          <text>indice visites (vs moy)</text>
+                        </title>
+                        <type>linear</type>
+                      </yaxis>
+                      <margin>
+                        <pad>0</pad>
+                        <t>100</t>
+                        <b>80</b>
+                        <l>80</l>
+                        <r>80</r>
+                      </margin>
+                    </Layout>
+                  </ChartingFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+            </Node>
+            <Node ToolID="45">
+              <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+                <Position x="1554" y="1362" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFileType>pdf</TempFileType>
+                  <BatchMode value="False" />
+                  <DataField>Table</DataField>
+                  <Separator>Continuous</Separator>
+                  <EmbedDependencies value="False" />
+                  <ShowHeader value="False" />
+                  <ShowFooter value="False" />
+                  <PdfCefOutput value="False" />
+                  <PortraitMode value="True" />
+                  <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+                  <DefaultStyles>
+                    <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1036" />
+                  </DefaultStyles>
+                  <PNGResolution>1</PNGResolution>
+                  <PNGLargerAction>squeeze</PNGLargerAction>
+                  <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+                  <PNGTransparentBG value="False" />
+                  <PNGBackColor value="#ffffff" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+            </Node>
+            <Node ToolID="46">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1554" y="1314" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_b090925809442243b731394ebae5bed4~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Rapport</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="51">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1554" y="1422" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_a9b3095afee1e34399da787d4757fa46~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Rapport</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="425" y="232" width="913" height="241" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ANALYSE - STATS UNIVARIEES SUR UNE VARIABLE</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffce" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>ANALYSE - STATS UNIVARIEES SUR UNE VARIABLE</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="PlotlyCharting">
+            <Position x="1134" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ChartingFields>
+                <Traces>
+                  <type>bar</type>
+                  <mode>markers</mode>
+                  <orientation>v</orientation>
+                  <xsrc>Title</xsrc>
+                  <ysrc>Count</ysrc>
+                  <aggregationField>ysrc</aggregationField>
+                  <aggregationFunction>sum</aggregationFunction>
+                  <aggregationFieldName>Count</aggregationFieldName>
+                  <textposition>None</textposition>
+                  <marker>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                  <name>Nbre de client par classes</name>
+                </Traces>
+                <Traces>
+                  <orientation>v</orientation>
+                  <type>scatter</type>
+                  <mode>markers</mode>
+                  <xsrc>Title</xsrc>
+                  <yaxis>y2</yaxis>
+                  <ysrc>%_TOTAL_colonne</ysrc>
+                  <marker>
+                    <size>21</size>
+                    <line>
+                      <width>0</width>
+                    </line>
+                    <symbol>hexagon2</symbol>
+                  </marker>
+                  <name>Poids par classes (%)</name>
+                </Traces>
+                <Layout>
+                  <title>
+                    <text>nber of customer per gender</text>
+                  </title>
+                  <font>
+                    <family>sans-serif</family>
+                    <size>12</size>
+                  </font>
+                  <autosize>false</autosize>
+                  <width>700</width>
+                  <height>849</height>
+                  <showlegend>true</showlegend>
+                  <hovermode>closest</hovermode>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <xaxis>
+                    <range>-0.5</range>
+                    <range>5.5</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Age_bin</text>
+                    </title>
+                    <type>category</type>
+                  </xaxis>
+                  <yaxis>
+                    <range>0</range>
+                    <range>478802.10526315792</range>
+                    <autorange>true</autorange>
+                    <title>
+                      <text>Count</text>
+                    </title>
+                    <type>linear</type>
+                  </yaxis>
+                  <yaxis2>
+                    <side>right</side>
+                    <showgrid>false</showgrid>
+                    <overlaying>y</overlaying>
+                    <type>linear</type>
+                    <range>-4.2434668749984237</range>
+                    <range>58.115428118449067</range>
+                    <autorange>true</autorange>
+                  </yaxis2>
+                </Layout>
+              </ChartingFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="582" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Count" action="Sum" rename="TOTAL" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="726" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="858" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Count]/[TOTAL]*100" field="%_TOTAL_colonne" size="4" type="Float" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[%_TOTAL_colonne = [Count]/[TOTAL]*100
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="990" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="TOTAL" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="450" y="281" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Title" action="GroupBy" rename="Title" />
+                <SummarizeField field="CustomerID" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1254" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_05b0817867129f41bbe6307bded8925e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Rapport</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1134" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False">
+                <Field name="Title" />
+              </GroupingFields>
+              <Width>264</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="Title" selected="True" Alignment="Right" />
+                <Field name="Count" selected="True" Alignment="Right" />
+                <Field name="%_TOTAL_colonne" selected="True" Alignment="Right" />
+                <Field name="*Unknown" selected="True" Alignment="Right" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Table de base</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1254" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_ad4b1ec5a68bbe45a1dd6a9bece6d7b0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Rapport</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints />
+                </View2>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1685" y="1169" width="444" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>classification selon comportement de consommation (base spend)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>classification selon comportement de consommation (base spend)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+            <Position x="1710" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Method>SmartTile</Method>
+              <SmartTile>
+                <Field>indice depenses (vs moy)</Field>
+              </SmartTile>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1902" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF  [Tile_Num] &lt; 0 THEN '1_PETITS' &#xA;ELSEIF [Tile_Num] = 0 THEN '2_MOYEN' &#xA;ELSE '3_GROS'&#xA;ENDIF" field="PMG" size="15" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PMG = IF  [Tile_Num] &lt; 0 THEN '1_PETITS' 
+ELSEIF [Tile_Num] = 0 THEN '2_MOYEN' 
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1998" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Tile_Num" selected="False" />
+                <SelectField field="Tile_SequenceNum" selected="False" />
+                <SelectField field="birth" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1806" y="1218" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="Tile_Num" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Tile_Num - Croissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="425" y="89" width="315" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ANALYSE - STATS DESCRIPTIVES DATASET</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffd7" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>ANALYSE - STATS DESCRIPTIVES DATASET</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="570" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_3780_073eabc1f602e547ad9ecf9ec1f092ee_\Engine_3780_0d0b0cf529d1784a8a9c5a743c117bb0~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings>
+            <Position x="450" y="137" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">CustomerID=True,Title=True,Birthdate=True,Store=True,Subdate=True,Redate=True,EndSubdate=True,VIP=True,Insee=True,Country=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="17" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="40" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="40" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="61" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="61" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Join" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="13" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Reports" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow_stat et analyse</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a360bc92-e815-430b-a20e-2a26e4d1629b" />
+      <Telemetry>
+        <PreviousWorkflowId value="97b44e79-8b0e-40bb-9237-4e1ac4423fa5" />
+        <OriginWorkflowId value="8a917a19-5fa0-4c60-af07-3bb915383a0b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

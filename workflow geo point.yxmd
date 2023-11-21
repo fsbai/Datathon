@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>False</IgnoreQuotes>
+            <Delimeter>;</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>correspondance-code-insee-code-postal.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Code INSEE" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Postal" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Commune" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Département" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Région" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Statut" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Altitude Moyenne" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Superficie" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Population" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="geo_point_2d" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="geo_shape" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="ID Geofla" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Commune" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Canton" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Arrondissement" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Département" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+            <Field name="Code Région" size="254" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\correspondance-code-insee-code-postal.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Statut" selected="False" />
+            <SelectField field="Altitude Moyenne" selected="False" />
+            <SelectField field="Superficie" selected="False" />
+            <SelectField field="Population" selected="False" />
+            <SelectField field="geo_shape" selected="False" />
+            <SelectField field="ID Geofla" selected="False" />
+            <SelectField field="Code Canton" selected="False" />
+            <SelectField field="Code Arrondissement" selected="False" />
+            <SelectField field="Code Département" selected="False" />
+            <SelectField field="Code Région" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="282" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>geo_point_2d</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>geo_point_2d</RootName>
+          <Delimeters value="," />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="390" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Commune","Département","Région","geo_point_2d1","geo_point_2d2"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="186" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Code INSEE=True,Code Postal=True,Commune=True,Département=True,Région=True,Statut=False,Altitude Moyenne=True,Superficie=True,Population=True,geo_point_2d=False,geo_shape=False,ID Geofla=False,Code Commune=False,Code Canton=False,Code Arrondissement=False,Code Département=False,Code Région=False</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings>
+        <Position x="798" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">10</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+          <Value name="Deterministic">False</Value>
+          <Value name="Seed">458676342</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="RandomRecords.yxmc" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_32156_4d7e9d246378fe43b00ed4488198a885_\Engine_32156_d1f46f2c3190224c8718294cc309b93a~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="125" width="313" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>définition des points géographiques</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>définition des points géographiques</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="606" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="geo_point_2d" selected="False" />
+                <SelectField field="geo_point_2d1" selected="True" rename="Latitude" type="Double" size="8" />
+                <SelectField field="geo_point_2d2" selected="True" rename="Longitude" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="498" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Région</Field>
+              <RegExExpression value="'['']'" />
+              <CaseInsensitve value="True" />
+              <Method>Replace</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>Région</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+              </ParseComplex>
+              <Match>
+                <Field>Code INSEE_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+            <Position x="702" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields fieldX="Longitude" fieldY="Latitude" />
+              <Mode>Projected</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="941" y="29" width="307" height="325" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>représentation visuelle (base échantillon)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>représentation visuelle (base échantillon)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="967" y="173" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_32156_4d7e9d246378fe43b00ed4488198a885_\Engine_32156_b20fe4f67cca0f4ab5ee8a72bc43f4db~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Carte</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>Latest:DarkCarto</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolyBuild.PolyBuild">
+            <Position x="967" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SpatialObj field="Centroid" />
+              <GroupField field="" />
+              <BuildType>SequencePolyline</BuildType>
+              <SequenceField field="" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxPolyBuild" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1087" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_32156_4d7e9d246378fe43b00ed4488198a885_\Engine_32156_61e5c178d174d1438763e4db57689622~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Carte</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>[Aucune carte de base]</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolyBuild.PolyBuild">
+            <Position x="966" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SpatialObj field="Centroid" />
+              <GroupField field="" />
+              <BuildType>ConvexHull</BuildType>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxPolyBuild" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1086" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_32156_4d7e9d246378fe43b00ed4488198a885_\Engine_32156_335e168a41f03d40bd2986606cad3fff~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Carte</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>[Aucune carte de base]</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="977" width="381" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DENSITE COMMUNE</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>DENSITE COMMUNE</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>grille_densite_niveau_detaille_2022.xlsx
+Query=`grille_4_nivDetaille$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="&#xA;Code &#xA;Commune&#xA;" size="255" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="V_String" />
+                <Field name="Libellé des communes&#xA;" size="255" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="V_WString" />
+                <Field name="Typo degré de &#xA;Densité&#xA;" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+                <Field name="Région&#xA;" size="255" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="V_String" />
+                <Field name="Population &#xA;municipale &#xA;2018" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+                <Field name="Part&#xA; population &#xA;Dense&#xA; (1)" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+                <Field name="Part &#xA;population &#xA;Intermédiaire &#xA;(2)" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+                <Field name="Part &#xA;population &#xA;Peu dense &#xA;(3)" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+                <Field name="Part &#xA;population &#xA;Très peu dense &#xA;(4)" source="File: C:\Users\vyvy.es\OneDrive\2. Ex MBA ESG PARIS\4. support de cours\7. Datascience\datamining\data\grille_densite_niveau_detaille_2022.xlsx|||`grille_4_nivDetaille$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="199" y="1026" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\vyvy.es\AppData\Local\Temp\Engine_32156_4d7e9d246378fe43b00ed4488198a885_\Engine_32156_612ab3f2b4e94643b6c8d73da0771c3d~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="199" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Région&#xA;" selected="False" />
+                <SelectField field="Population &#xA;municipale &#xA;2018" selected="False" />
+                <SelectField field="Part&#xA; population &#xA;Dense&#xA; (1)" selected="False" />
+                <SelectField field="Part &#xA;population &#xA;Intermédiaire &#xA;(2)" selected="False" />
+                <SelectField field="Part &#xA;population &#xA;Peu dense &#xA;(3)" selected="False" />
+                <SelectField field="Part &#xA;population &#xA;Très peu dense &#xA;(4)" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="319" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Typo degré de &#xA;Densité&#xA;] == 1 THEN '1_urbain'&#xA;ELSEIF [Typo degré de &#xA;Densité&#xA;] ==2 THEN '2_Periurbain'&#xA;ELSE '3_Rural'&#xA;ENDIF" field="Densité" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Densité = IF [Typo degré de 
+Densité
+] == 1 THEN '1_urbain'
+ELSEIF [Typo degré d...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="22" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output26" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Reports" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow insee geo</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="413ecbab-c4c1-4947-bc7d-db52c445ca0c" />
+      <Telemetry>
+        <PreviousWorkflowId value="19bac347-fbc4-4f92-bf65-e4fabfd5cefc" />
+        <OriginWorkflowId value="19bac347-fbc4-4f92-bf65-e4fabfd5cefc" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
